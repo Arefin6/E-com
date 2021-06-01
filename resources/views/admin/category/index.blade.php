@@ -10,6 +10,7 @@
                       <tr>
                         <th scope="col">Id</th>
                         <th scope="col">Category Name</th>
+                        <th scope="col">Category Image</th>
                         <th scope="col">Action</th>
                       </tr>
                     </thead>
@@ -21,6 +22,9 @@
                       <tr>
                         <th scope="row">{{$category->id}}</th>
                         <td>{{$category->name}}</td>
+                          <td>
+                          <img src="{{ asset('/'. $category->image) }}"   width="70px"height="50px" style="border-radius: 50%;"/>
+                            </td>
                         <td><a href="{{ route('category.edit',['id'=>$category->id]) }}" class="btn btn-outline-success">Update</a>
                         <a href="{{ route('category.delete',['id'=>$category->id]) }}" class="btn btn-outline-danger">Delete</a></td>
                       </tr>

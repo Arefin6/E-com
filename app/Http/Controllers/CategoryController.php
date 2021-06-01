@@ -18,11 +18,21 @@ class CategoryController extends Controller
     {
         $this->validate($request, [
             'name' => 'required',
+            'image' => 'required|image',
         ]);
+
+        $featured = $request->image;
+
+        $featured_new_name = time().$featured->getClientOriginalName();
+
+        $featured->move('uploads/category', $featured_new_name);
+
 
         $category = new Category;
 
         $category->name = $request->name;
+
+        $category->image = 'uploads/category/'.$featured_new_name;
 
         $category->save();
 

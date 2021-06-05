@@ -24,9 +24,9 @@
                     
                 </li>
                 <li>
-                    <a href="post.html">
+                    <a href="{{route('product.index')}}">
                         <span class="ti-clipboard"></span>
-                        <span>Post</span>
+                        <span>Products</span>
                     </a>
                     
                 </li>

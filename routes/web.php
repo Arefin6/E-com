@@ -46,4 +46,31 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
         'uses' => 'CategoryController@destroy',
         'as' => 'category.delete'
     ]);
+
+    //Products
+
+    Route::get('/product/create', [
+        'uses' => 'ProductController@create',
+        'as' => 'product.create'
+    ]);
+    Route::post('/product/store', [
+        'uses' => 'ProductController@store',
+        'as' => 'product.store'
+    ]);
+    Route::get('/products', [
+        'uses' => 'ProductController@index',
+        'as' => 'product.index'
+    ]);
+    Route::get('/product/edit/{id}', [
+        'uses' => 'ProductController@edit',
+        'as' => 'product.edit'
+    ]);
+    Route::post('/product/update/{id}', [
+        'uses' => 'productController@update',
+        'as' => 'product.update'
+    ]);
+    Route::get('/product/delete/{id}', [
+        'uses' => 'productController@destroy',
+        'as' => 'product.delete'
+    ]);
 });  

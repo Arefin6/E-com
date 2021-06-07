@@ -32,37 +32,33 @@
                 </li>
              
                 <li>
-                    <a href="inbox.html">
+                    <a href="{{route('post.index')}}">
                         <span class="ti-book"></span>
-                        <span>inbox</span>
+                        <span>Post</span>
                     </a>
                     
                 </li>
                 <li>
-                    <a href="orderlist.html"> 
-                        <span class="ti-layout-grid2-alt"></span>
-                        <span>Order</span></a>
-                   
-                </li>
-                <li>
-                    <a href="customer.html">
-                        <span class="ti-layout-grid2-alt"></span>
-                        <span>Coustomer list</span>
+                    <a href="{{route('message.index')}}">
+                        <span class="ti-comment-alt"></span>
+                        <span>Messages</span>
                     </a>
                     
                 </li>
+
                 <li>
-                    <a href="post.html"> 
-                        <span class="ti-clipboard"></span>
-                        <span>post</span></a>
-                   
+                    <a href="{{route('post.index')}}">
+                        <span class="ti-user"></span>
+                        <span>Logout</span>
+                    </a>
+                    
                 </li>
-                <li>
-                    <a href="singout.html"> 
-                        <span class="ti-settings"></span>
-                        <span>account</span></a>
-                   
-                </li>
+              
+                
             </ul>
         </div>
     </div>
+
+    <p>
+    
+    </p>

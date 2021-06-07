@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [
+    'uses' => 'HomeController@welcome',
+    'as' => 'welcome'
+]);
 
 Auth::routes();
 
@@ -99,4 +100,24 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
         'uses' => 'PostController@destroy',
         'as' => 'post.delete'
     ]);
-});  
+
+    Route::get('/message/index', [
+        'uses' => 'MessageController@index',
+        'as' => 'message.index'
+    ]);
+
+    
+});
+
+//message
+Route::get('/message/create', [
+    'uses' => 'MessageController@create',
+    'as' => 'message.create'
+]);
+
+Route::post('/message/store', [
+    'uses' => 'MessageController@store',
+    'as' => 'message.store'
+]);
+
+

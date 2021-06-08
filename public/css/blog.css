@@ -1,0 +1,284 @@
+.blog-top{
+    
+    background: linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.15)),
+    url(../images/farniture1.jpg)center center no-repeat;
+    height: 400px;
+    width: 100%;
+}
+.blog-cat{
+   
+}
+.blog-cat p{
+ font-size: 18px;
+ font-weight: 600;
+ color: rgb(36, 32, 32);
+ margin-left: 35px;
+}
+.blog-cat p::after{
+    content: '';
+    height: 2px;
+    width: 95px;
+    background: #000;
+    position: absolute;
+    display: block;
+    margin-top: 6px;
+}
+.blog-cat ul li{
+ display: block;
+ height: 40px;
+ width: 100%;
+ border-bottom: 1px solid;
+border-color: rgb(185, 181, 181);
+
+}
+.blog-cat ul li a{
+    padding-top:10px ;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 25px;
+    color: rgb(103, 103, 109);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    
+    
+}
+.blog-cat ul li a:hover{
+ color: rgb(245, 161, 83);
+}
+.recentpost p{
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(36, 32, 32);
+    text-transform: capitalize;
+    margin-left: 35px;
+   }
+   .recentpost p::after{
+       content: '';
+       height: 2px;
+       width: 105px;
+       background: #000;
+       position: absolute;
+       display: block;
+       margin-top: 6px;
+   }
+   .recentpost  ul li{
+       margin-top:15px;
+    display: block;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid;
+   border-color: rgb(236, 234, 234);
+   
+   }
+   .recentpost  ul li a{
+       
+     
+       color: rgb(103, 103, 109);
+       text-decoration: none;
+       text-transform: capitalize;
+       font-weight: 500;
+            
+   }
+  .recentpost  ul li a:hover{
+    color: rgb(235, 135, 21);
+  }
+   #date{
+       color: rgb(238, 145, 83);
+       font-size: 12px;
+   }
+   .socal_bmedia p{
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(36, 32, 32);
+    text-transform: capitalize;
+    margin-left: 35px;
+   }
+   .socal_bmedia p::after{
+       content: '';
+       height: 2px;
+       width: 95px;
+       background: #000;
+       position: absolute;
+       display: block;
+       margin-top: 6px;
+   }
+   .socal_bmedia  ul li{
+    
+    display: inline-block;
+    background: rgb(24, 23, 23);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+   }
+   .socal_bmedia  ul li:hover{
+       background-color: rgb(235, 135, 21);;
+   }
+  
+   .socal_bmedia  i.fab{
+       color: rgb(247, 240, 240);
+       font-size: 20px;
+       padding: 10px;
+       
+       
+       
+   }
+
+   .video_media p{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(36, 32, 32);
+    text-transform: capitalize;
+    margin-left: 35px;
+    
+   }
+   .video_media p::after{
+       content: '';
+       height: 2px;
+       width: 95px;
+       background: #000;
+       position: absolute;
+       display: block;
+       margin-top: 6px;
+   }
+   .card-adcv{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    
+}
+.card-adcv:hover{
+    color: rgb(235, 135, 21);
+    
+}
+   .imgv{
+       margin-top: 10px;
+       height: 280px;
+       width: 350px;
+       border: 1px solid;
+   }
+
+   .blog-card-title{
+       font-size: 22px;
+       font-family: monospace;
+       font-weight: 600;
+       
+   }
+   .blog-card-title:hover{
+    color: rgb(235, 135, 21);
+
+   }
+   .card{
+       box-shadow: none;
+   }
+   .card-date ul{
+       margin-left: -30px;
+
+   }
+   .card-date ul > li{
+       margin-left: 12px;
+   }
+   .card-date ul li {
+       display: inline-block;
+       
+   }
+   .card-adc{
+       font-size: 14px;
+       text-transform: capitalize;
+       
+   }
+   i.blog-user{
+       color: rgb(235, 135, 21);
+       font-size: 12px;
+   }
+   .card-adc:hover{
+    color: rgb(235, 135, 21);
+   }
+   .read-btn {
+       text-decoration: none;
+       color: #000;
+       text-transform: capitalize;
+       margin-top: -5px;
+   }
+   .read-btn:hover{
+    color: rgb(235, 135, 21);  
+   }
+.fa-arrow-right{
+    margin-top: 5px;
+    font-size: 18px;
+    color: #000;
+}
+.fa-arrow-right:hover{
+    
+    color: rgb(235, 135, 21);
+}
+.card-text{
+    color: #000;
+    font-weight: 500;
+}
+.cmt{
+    
+    font-weight: 700;
+    font-size: 25px;
+   margin-left: 8%;
+   color: rgb(219, 31, 31);
+   }
+#cmt{
+    margin-left:50px;
+   font-size: 16px;
+   color: #000;
+   }
+   #comment_area
+   {
+       height: 40px;
+       width: 60%;
+       border: none;
+       border-bottom: 2px solid #aaa;
+       background-color: transparent;
+       margin-bottom: 10px;
+       resize: none;
+       outline: none;
+       transition: .5s
+   }
+   #cm_from{
+       margin-top: 5px;
+       padding: 5px;
+      
+   }
+   
+   input[type="submit"] ,.btcn
+   {
+       height: 45px;
+       width: 120px;
+       padding:10px 15px;
+       border: none;
+       outline: none;
+       float: left;
+       border-radius: 5px;
+       text-transform: uppercase;
+       font-weight: bold;
+       cursor: pointer;
+   }
+   input[type="submit"]
+   {
+       color: #fff;
+       background-color: #087219
+   }
+   .btcn
+   {   
+       
+       margin-left: 10px;
+      
+       color: rgb(255, 251, 251);
+       background-color:rgb(238, 26, 44);
+   }
+   .bt
+   {
+       display: none
+   }

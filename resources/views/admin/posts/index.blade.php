@@ -27,7 +27,7 @@
                           <img src="{{ asset('/'. $post->featured) }}"   width="70px"height="50px" style="border-radius: 50%;"/>
                             </td>
                             <td>
-                             {{$post->content}}
+                            {{ str_limit($post->content, 30) }}
                             </td>
                         <td><a href="{{ route('post.edit',['id'=>$post->id]) }}" class="btn btn-outline-success">Update</a>
                         <a href="{{ route('post.delete',['id'=>$post->id]) }}" class="btn btn-outline-danger">Delete</a></td>

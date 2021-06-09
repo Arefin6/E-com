@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Category;
+
 class HomeController extends Controller
 {
     /**
@@ -26,7 +28,8 @@ class HomeController extends Controller
         return view('home');
     }
     public function welcome(){
-       return view('welcome'); 
+        $categories = Category::all();
+       return view('welcome')->with('categories',$categories); 
     }
   
 }

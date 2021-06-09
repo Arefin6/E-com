@@ -82,9 +82,9 @@
 </header>               
                                        
 
- <main>
+
  @yield('content')
- </main>
+ 
           
 <div class="section10">
 
@@ -195,20 +195,16 @@
   </footer>
 </div>
 
-
-
       <!-- footer -->
   
-  
       <!-- vendors -->
- 
-       
+     
       <script src="assets/vendors/highlight.js"></script>
       <script src="assets/js/app.js"></script>
       
       
    
-      <script src="js/script.js"></script>
+      <script src="{{(asset(''))}}js/script.js"></script>
       <script src="js/owl.js"></script>
       <script src="js/code.js"></script>
       <script src="js/slick.js"></script>

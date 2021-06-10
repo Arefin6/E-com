@@ -129,4 +129,11 @@ Route::get('/blogs',[
     'as' => 'blogs' 
 ]);
 
+Route::get('/{slug}', [
+	
+    'uses' => 'FrontendController@singlePost',
+
+    'as' => 'post.single'
+]);
+
 

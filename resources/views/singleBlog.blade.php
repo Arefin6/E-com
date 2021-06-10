@@ -127,70 +127,40 @@
                 <!-------------------------------vdeio card--------------------------->
             </div>
 
-
-
       </div>
-      <!----------------------------------------------------blog posts-------------------------------------------------->
+
+
       <div class="col-sm-9" >
-        <div class="container-fluid">
-            <div class="row">
-                <!-------------------------------------------card1------------------------------------------->
-                @if($posts->count()>0)
-                   
-                   @foreach($posts as $post)
-                <div class="col-sm-6" style="margin-top: 25px;">
-                    <div class="card" style="width: 25rem; border: none;">
-                        <img src="{{ asset('/'. $post->featured) }}" class="card-img-top" alt="..." style="height: 290px;">
-                        <div class="card-body">
-                          <h5 class="card-title blog-card-title">{{$post->title}}</h5>
-                          <div class="card-date">
-                              <ul>
-                                  <li>
-                                 <i class="far fa-user blog-user"></i> <span class="card-adc">Admin</span>  
-
-                                  </li>
-                                  <li>
-                                      <i class="far fa-calendar blog-user"></i> <span class= "card-adc">{{$post->created_at->format('d/m/Y')}}</span>
-                                    
-
-                                  </li>
-                                  <li>
-                                    <i class="far fa-comment blog-user"></i> <span class="card-adc">comment</span>
-                                  </li>
-                              </ul>
-                            </div>
-                              
-                          <p class="card-text"> {{ str_limit($post->content, 60) }}</p>
-                          <a href="{{route('post.single',['slug'=>$post->slug])}}" class="read-btn "> 
-                              <span class="read-btn-desing" >Countinue reading</span> <i class="fas fa-arrow-right"></i>
-                               </a>
-                        </div>
-                      </div>
-                  </div>
-
-                  <!-------------------------------------------end card1------------------------------------------->
-                  @endforeach
-                
-                @else
-                    <tr>
-                    		<th colspan="5" class="text-center">No Posts Yet..</th>
-                    </tr>
-                 @endif   
-                            
-                     
-              
-<!-------------------------------------------endcard2------------------------------------------->
-<!-------------------------------------------card3------------------------------------------->
-
-
-              
-<!-------------------------------------------end card4------------------------------------------->
-
-
-            </div>
-          </div>
-      </div>
-<!----------------------------------------------------end blog posts-------------------------------------------------->
- 
+            <div class="container-fluid">
+                <div class="row">
+                    <!-------------------------------------------card1------------------------------------------->
+                    <div class="" style="margin-top: 25px;">
+                        <div class="card" style="width: 50rem; border: none;">
+                            <img src="{{ asset('/'. $post->featured) }}" class="card-img-top" alt="..." style="height: 400px;">
+                            <div class="card-body">
+                              <h5 class="card-title blog-card-title">{{$post->title}}</h5>
+                              <div class="card-date">
+                                  <ul>
+                                      <li>
+                                     <i class="far fa-user blog-user"></i> <span class="card-adc">Admin</span>  
     
+                                      </li>
+                                      <li>
+                                          <i class="far fa-calendar blog-user"></i> <span class= "card-adc">may,30,2021</span>
+                                        
+    
+                                      </li>
+                                
+                                  </ul>
+                                </div>
+                                  
+                              <p class="card-text">{{$post->content}}</p>
+                              
+                            </div>
+                          </div>
+                      </div>
+
+                      </div>
+      </div> 
+      </div>      
 @endsection 

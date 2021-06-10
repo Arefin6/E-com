@@ -18,4 +18,13 @@ class FrontEndController extends Controller
         $posts = Posts::all();
         return view('blog')->with('posts',$posts);
     }
+
+    public function singlePost($slug){
+		
+		$post = Posts::where('slug',$slug)->first();
+
+        return view('singleBlog')->with('post',$post);
+    }    
+
+
 }

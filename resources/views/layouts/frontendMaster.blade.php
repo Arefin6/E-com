@@ -13,6 +13,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"   ></script>
 <link rel="stylesheet" href="css/slick.css">
 <link rel="stylesheet" href="css/slick-theme.css">
+<link rel="stylesheet" href="css/blog.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css"/>
 
 
 
@@ -44,14 +47,14 @@
                         </div>
                         <ul class="menu-main">
                             <li>
-                                <a href="#">Home</a>
+                                <a href="{{route('welcome')}}">Home</a>
                             </li>
                             <li>
-                                <a href="#">Shop</a>
+                                <a href="{{route('products')}}">Shop</a>
                             </li>
             
                             <li>
-                                <a href="#">Blog</a>
+                                <a href="{{route('blogs')}}">Blog</a>
       
                              </li> 
                              <li>
@@ -211,5 +214,8 @@
       <script src="js/slider.js"></script>
        <script src="js/codeslick.js"></script>
        <script src="js/navbar.js"></script>
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -124,5 +124,9 @@ Route::get('/products',[
     'uses' => 'FrontEndController@product',
     'as' => 'products' 
 ]);
+Route::get('/blogs',[
+    'uses' => 'FrontEndController@blogs',
+    'as' => 'blogs' 
+]);
 
 

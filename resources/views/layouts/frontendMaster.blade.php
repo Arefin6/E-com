@@ -59,7 +59,7 @@
       
                              </li> 
                              <li>
-                                <a href="#">Contact</a>
+                                <a href="{{route('message.create')}}">Contact</a>
       
                              </li> 
                         </ul> 

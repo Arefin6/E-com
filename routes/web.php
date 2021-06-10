@@ -120,4 +120,9 @@ Route::post('/message/store', [
     'as' => 'message.store'
 ]);
 
+Route::get('/products',[
+    'uses' => 'FrontEndController@product',
+    'as' => 'products' 
+]);
+
 

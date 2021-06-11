@@ -19,7 +19,7 @@
                               <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                               <li><a href="#" data-tip="Compare"><i class="fa fa-random"></i></a></li>
                               <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-                              <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-bag"></i></a></li>
+                              <li><a href="{{route('cart.add',['id'=>$product->id])}}" data-tip="Add to Cart"><i class="fa fa-shopping-bag"></i></a></li>
                           </ul>
                       </div>
                       <div class="product-content">

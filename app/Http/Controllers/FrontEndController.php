@@ -24,7 +24,11 @@ class FrontEndController extends Controller
 		$post = Posts::where('slug',$slug)->first();
 
         return view('singleBlog')->with('post',$post);
-    }    
-
+    }  
+    
+    public function checkout(){
+    
+       return view('checkout'); 
+    }
 
 }

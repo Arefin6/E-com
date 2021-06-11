@@ -16,6 +16,52 @@ Route::get('/', [
     'as' => 'welcome'
 ]);
 
+//cart
+
+Route::get('/cart',[
+ 
+    'uses'=>'CartController@cart',
+      
+    'as'  =>'carts'
+  
+  ]);
+
+  Route::post('/cart/update',[
+ 
+    'uses'=>'CartController@updateCart',
+      
+    'as'  =>'cart.update'
+  
+  
+  ]);
+
+  Route::get('/cat/add/{id}',[
+ 
+    'uses'=>'CartController@addToCart',
+      
+    'as'  =>'cart.add'
+  
+  ]);
+  
+  Route::get('/cart/remove/{id}',[
+ 
+    'uses'=>'CartController@removeFromCart',
+      
+    'as'  =>'cart.remove'
+  
+  
+  ]);
+
+  //checkout
+
+  Route::get('/checkout',[
+ 
+    'uses'=>'FrontEndController@checkout',
+      
+    'as'  =>'checkout'
+  
+  ]);
+
 Auth::routes();
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
@@ -135,5 +181,10 @@ Route::get('/{slug}', [
 
     'as' => 'post.single'
 ]);
+
+
+
+ 
+
 
 

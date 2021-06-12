@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 use App\Category;
 
+use App\Posts;
+
+use App\Product;
+
 class HomeController extends Controller
 {
     /**
@@ -25,7 +29,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('home')
+        ->with('posts_count',Posts::all()->count())
+        ->with('category_count',Category::all()->count())
+        ->with('products_count',Product::all()->count());
     }
     public function welcome(){
         $categories = Category::all();

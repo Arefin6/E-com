@@ -63,4 +63,13 @@ class ClientController extends Controller
         }
 
     }
+
+    public function logout(){
+
+        Session::forget('client');
+
+        return redirect()->back();
+    }
+
+
 }

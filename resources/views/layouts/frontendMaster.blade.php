@@ -80,10 +80,17 @@
                                 <a href="{{route('blogs')}}">Blog</a>
       
                              </li> 
+                             @if(Session::has('client'))
+                             <li>
+                                <a href="{{route('logout.user')}}">Logout</a>
+      
+                             </li> 
+                             @else
                              <li>
                                 <a href="{{route('login.user')}}">Login</a>
       
                              </li> 
+                             @endif
                              <li>
                                 <a href="{{route('message.create')}}">Contact</a>
       

@@ -62,6 +62,13 @@ Route::get('/cart',[
   
   ]);
 
+  Route::post('/checkout/store',[
+ 
+    'uses'=>'OrderController@storeCheckout', 
+    'as'  =>'checkout.store'
+  
+  ]); 
+
 
  //client Login
 
@@ -80,6 +87,15 @@ Route::get('/cart',[
     'as'  =>'client.createAccount'   
     
    ]);
+
+   Route::get('/user/logout',[
+ 
+    'uses'=>'clientController@logout',
+      
+    'as'  =>'logout.user'
+    
+    
+  ]);
    Route::post('/client/accessAccount',[
  
     'uses'=>'clientController@accessAccount',

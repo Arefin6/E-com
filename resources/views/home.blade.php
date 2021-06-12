@@ -8,8 +8,8 @@
                     <div class="card-body">
                         <span class="ti-briefcase"></span>
                         <div>
-                            <h5>Total Coustomar</h5>
-                            <h4>550</h4>
+                            <h5>Total Products</h5>
+                            <h4>{{$products_count}}</h4>
                         </div>
 
                     </div>
@@ -23,8 +23,8 @@
                     <div class="card-body">
                         <span class="ti-reload"></span>
                         <div>
-                            <h5>Order</h5>
-                            <h4>550</h4>
+                            <h5>categories</h5>
+                            <h4>{{$category_count}}</h4>
                         </div>
 
                     </div>
@@ -39,8 +39,8 @@
                     <div class="card-body">
                         <span class="ti-check-box"></span>
                         <div>
-                            <h5>Total Sells</h5>
-                            <h4>403555</h4>
+                            <h5>Total Posts</h5>
+                            <h4>{{$posts_count}}</h4>
                         </div>
 
                     </div>

@@ -72,21 +72,21 @@ Route::get('/cart',[
     'as'  =>'login.user'
   
   ]);
-  Route::get('/signup/user',[
  
-    'uses'=>'FrontEndController@signup',
+  Route::post('/client/createAccount',[
+ 
+     'uses'=>'clientController@createAccount',
       
-    'as'  =>'signup.user'
+    'as'  =>'client.createAccount'   
+    
+   ]);
+   Route::post('/client/accessAccount',[
+ 
+    'uses'=>'clientController@accessAccount',
+      
+    'as'  =>'client.accessAccount'
   
   ]);
-//   Route::post('/client/createAccount',[
- 
-//     'uses'=>'AdminController@createAccount',
-      
-//     'as'  =>'client.createAccount'
-    
-    
-//   ]);
 
 
 Auth::routes();

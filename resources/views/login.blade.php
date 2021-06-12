@@ -9,19 +9,21 @@
 <body>
    
     <div class="login-page">
+    @include('admin.error')
         <div class="form">
-            <form class="register-form" >
-                <input type="text" placeholder="user name"/>
-                <input type="password" placeholder="password"/>
-                <input type="text" placeholder="email id"/>
-                <button>Create</button>
+            <form class="register-form" method="post" action="{{route('client.createAccount')}}" >
+                {{ csrf_field() }}
+                <input type="email" name="email" placeholder="email"/>
+                <input type="password" name="password" placeholder="password"/>
+                <button type="submit">Register</button>
                 <p class="message">AlRady Registered? <a href="#">Login</a> </p>
             </form>  
             
-                <form class="login-form" >
-                    <input type="text" placeholder="user name"/>
-                    <input type="password" placeholder="password"/>              
-                    <button>Create</button>
+                <form class="login-form" method="post" action="{{route('client.accessAccount')}}" >
+                {{ csrf_field() }}    
+                <input type="email"  placeholder="email" name="email"/>
+                    <input type="password" placeholder="password" name="password"/>              
+                    <button type="submit">Login</button>
                     <p class="message">Not Registered? <a href="#">register</a> </p>
                 </form>     
             </div>   

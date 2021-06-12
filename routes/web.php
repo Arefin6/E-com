@@ -62,6 +62,33 @@ Route::get('/cart',[
   
   ]);
 
+
+ //client Login
+
+ Route::get('/user/signin',[
+ 
+    'uses'=>'FrontEndController@login',
+      
+    'as'  =>'login.user'
+  
+  ]);
+  Route::get('/signup/user',[
+ 
+    'uses'=>'FrontEndController@signup',
+      
+    'as'  =>'signup.user'
+  
+  ]);
+//   Route::post('/client/createAccount',[
+ 
+//     'uses'=>'AdminController@createAccount',
+      
+//     'as'  =>'client.createAccount'
+    
+    
+//   ]);
+
+
 Auth::routes();
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){

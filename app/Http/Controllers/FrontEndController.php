@@ -31,4 +31,12 @@ class FrontEndController extends Controller
        return view('checkout'); 
     }
 
+
+    public function login(){
+        return view('login');
+    }
+    public function signup(){
+        return view('register');
+    }
+
 }
